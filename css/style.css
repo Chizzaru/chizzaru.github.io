@@ -24,8 +24,15 @@ a {
     flex-direction: row;
     text-align: justify;
 }
+.item1 {
+    padding: 10px;
+    flex: 1;
+    align-self: flex-start;
+    
+}
 
 .item2 {
+    flex: 2;
     padding: 10px;
 }
 .banner {
@@ -88,12 +95,24 @@ a {
 }
 
 img {
-    height: 125px;
+    height: 180px;
 }
 
 img:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    height: 5vh;
+    color : rgb(0, 0, 0);
 }
 
 @keyframes shake {
@@ -138,4 +157,5 @@ img:hover {
     .banner {
         height: 25vh;
     }
+    
 }
