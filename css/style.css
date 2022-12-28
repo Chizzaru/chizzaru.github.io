@@ -17,6 +17,17 @@ a {
 
 }
 
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: justify;
+}
+
+.item2 {
+    padding: 10px;
+}
 .banner {
     /*background-color: azure;*/
     display: flex;
@@ -36,8 +47,12 @@ a {
 
 .myname {
     text-decoration: underline overline;
-    text-shadow: 3px 2px 1px gray;
     letter-spacing: 4px;
+}
+
+.content-header {
+    letter-spacing: 1px;
+    color : black;
 }
 
 .btn {
@@ -45,6 +60,7 @@ a {
     border-radius: 18px;
     text-decoration: none;
     font-weight: bold;
+    color: white !important;
 }
 
 .btn-blue {
@@ -104,5 +120,22 @@ img:hover {
     }
     100% {
         font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content-header {
+        font-size: 15px;
+    }
+    .myname {
+        font-size: 20px;
+    }
+
+    span {
+        font-size: 10px;
+    }
+
+    .banner {
+        height: 25vh;
     }
 }
