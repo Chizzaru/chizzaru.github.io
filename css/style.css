@@ -1,3 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner {
+    background-color: azure;
+}
+
+h1 {
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+
+@keyframes example {
+    0% {
+        font-size: 32px;
+    }
+    50% {
+        font-size: 60px;
+    }
+    100% {
+        font-size: 32px;
+    }
 }
