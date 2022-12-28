@@ -11,10 +11,20 @@ body {
 
 .banner {
     /*background-color: azure;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50vh;
+    background-image: url('../img/samplepic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-h1 {
-    animation: example 1s;
+.myname {
+    text-decoration: underline;
+    text-shadow: 3px 2px 5px grey;
 }
 
 .btn {
