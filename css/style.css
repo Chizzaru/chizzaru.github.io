@@ -35,8 +35,9 @@ a {
 }
 
 .myname {
-    text-decoration: underline;
-    text-shadow: 3px 2px 5px grey;
+    text-decoration: underline overline;
+    text-shadow: 3px 2px 1px gray;
+    letter-spacing: 4px;
 }
 
 .btn {
