@@ -1,162 +1,56 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'Arial';
-    color : rgb(255, 255, 255);
-}
-
-a {
-    color: darkcyan;
-    text-decoration: none;
-    padding: 3px;
-
-}
-
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.item1 {
-    text-align: center;
-    flex: 0.5;
-    
-}
-
-.item1 > ul > li {
-    padding: 20px;
-}
-
-.item1 > ul > li:hover {
-    background-color: whitesmoke;
-}
-.item2 {
-    flex: 2;
-    padding: 20px;
-}
-.banner {
-    /*background-color: azure;*/
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    flex-direction: column;
-    height: 50vh;
-    background-image: url('../img/samplepic.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.login-poster {
+    background-image: url(https://connect.ignatiuz.com/hs-fs/hubfs/Helpdesk.gif?width=1250&height=1368&name=Helpdesk.gif);
     background-position: center;
+    background-size:390px;
+    background-repeat: no-repeat;
 }
 
-.banner-title {
-    animation : fadeeffect 2s;
-    text-align: center;
-}
-
-.myname {
-    text-decoration: underline overline;
-    letter-spacing: 4px;
-}
-
-.content-header {
-    color : black;
-}
-
-.btn {
-    padding: 10px;
-    border-radius: 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white !important;
-}
-
-.btn-blue {
-    background-color: blue;
-    border: 1px solid white;
-}
-
-.btn-green{
-    background-color: rgb(24, 179, 19);
-    border: 1px solid white;
-}
-
-.btn-orange{
-    background-color: rgb(255, 238, 3);
-    border: 1px solid white;    
-}
-
-.btn-red{
-    background-color: rgb(243, 71, 19);
-    border: 1px solid white;    
-}
-
-.btn:hover{
-    padding: 11px;
-}
-
-img {
-    height: 180px;
-}
-
-img:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+#row-login {
+    height: calc(100vh - 50px - 50px);
 }
 
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+.form-signin {
     width: 100%;
-    padding-top : 10px;
-    background-color: #eee;
-    text-align: center;
-    height: 5vh;
-    color : rgb(0, 0, 0);
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
 }
 
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+.form-signin .form-floating:focus-within {
+    z-index: 2;
 }
 
 
-@keyframes fadeeffect {
-    from {
-        opacity: 0.3;
-    }
-    to {
-        opacity: 1;
-    }
+
+.btn-colorone {
+    color : #fff;
+    border-color: rgb(255, 165, 89);
+    background-color: rgb(255, 96, 0);
 }
 
-@media only screen and (max-width: 480px) {
-    .content-header {
-        font-size: 15px;
-    }
-    .myname {
-        font-size: 20px;
-    }
+.btn-colorone:hover {
+    color : #fff;
+    border-color: rgb(255, 150, 89);
+    background-color: rgb(255, 102, 0);
+}
 
-    span {
-        font-size: 10px;
-    }
-
-    .banner {
-        height: 25vh;
-    }
-    
+.btn-check:focus + .btn-colorone, .btn-colorone:focus {
+  color : #fff;
+  border-color: rgb(255, 150, 89);
+  background-color: rgb(255, 102, 0);
+  box-shadow: 0 0 0 0.25rem rgba(255, 102, 0, 0.5);
+}
+.btn-check:checked + .btn-colorone, .btn-check:active + .btn-colorone, .btn-colorone:active, .btn-colorone.active, .show > .btn-colorone.dropdown-toggle {
+  color : #fff;
+  border-color: rgb(255, 150, 89);
+  background-color: rgb(255, 102, 0);
+}
+.btn-check:checked + .btn-colorone:focus, .btn-check:active + .btn-colorone:focus, .btn-colorone:active:focus, .btn-colorone.active:focus, .show > .btn-colorone.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 102, 0, 0.5);
+}
+.btn-colorone:disabled, .btn-colorone.disabled {
+  color : #fff;
+  border-color: rgb(255, 150, 89);
+  background-color: rgb(255, 102, 0);
 }
