@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Home</title>
+    <title>Chizzaru</title>
 </head>
 <body>
     <div class="container">
@@ -12,23 +12,65 @@
             <img src="/img/img1.jpg" alt="">
         </div>
         
-        <li style="--i:0"><a href="#">
+        <li id="about" class="tooltip" data-tooltip="ABOUT ME" style="--i:0"><a href="#">
             <ion-icon name="information-circle-outline"></ion-icon>
         </a></li>
-        <li style="--i:1"><a href="#">
+        <li class="tooltip" data-tooltip="PORTFOLIO" style="--i:1"><a href="#">
             <ion-icon name="document-text-outline"></ion-icon>
         </a></li>
-        <li style="--i:2"><a href="#">
+        <li class="tooltip" data-tooltip="SERVICES" style="--i:2"><a href="#">
             <ion-icon name="construct-outline"></ion-icon>
         </a></li>
-        <li style="--i:3"><a href="#">
+        <li class="tooltip" data-tooltip="BLOGS" style="--i:3"><a href="#">
             <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
         </a></li>
-        <li style="--i:4"><a href="#">
+        <li class="tooltip" data-tooltip="CONTACT" style="--i:4"><a href="#">
             <ion-icon name="call-outline"></ion-icon>
         </a></li>
-
         <h1>Christian</h1>
+    </div>
+
+    <!--ABOUT ME-->
+    <div id="backdrop_about" class="backdrop">
+        <div class="backdrop-header">
+            <h1>About Me</h1>
+            <div id="backdrop_about_close" class="close-button"><ion-icon name="close-circle-outline"></ion-icon></div>
+        </div>
+        <hr>
+        <div class="backdrop-content">
+            <p>
+                I am a passionate Java Developer with 3 years of experience in designing,
+                developing, and maintaining scalable and high-performance applications. 
+                Proficient in Java, Spring Boot, Hibernate, RESTful APIs, and other backend technologies, 
+                I have a strong foundation in object-oriented programming (OOP) and software development best practices.
+            </p>
+            <p>
+            I enjoy solving complex problems and optimizing applications for performance and efficiency. 
+                Whether integrating databases, or ensuring robust security measures, 
+                I am always eager to learn and apply the latest technologies in the Java ecosystem.
+            </p>
+            <p>
+            With a keen eye for clean and maintainable code, I follow agile methodologies to collaborate effectively with teams and 
+                deliver high-quality software solutions. I am always excited about new challenges 
+                and opportunities to innovate in software development.
+            </p>
+            <br>
+            <h3>Skills and Technologies</h3>
+            <ul>
+                <li>Java, Spring Boot, Hibernate, JPA</li>
+                <li>RESTful APIs, MVC Architecture</li>
+                <li>HTML, CSS, Javascript, JQuery</li>
+                <li>SQL (MySQL, PostgreSQL, MS SQLServer)</li>
+                <li>Apache Lounge, Apache Tomcat, XAMPP Server</li>
+                <li>Git, Gitlab</li>
+                <li>Agile, TDD, Unit Testing(Junit)</li>
+            </ul>
+            <br>
+            <h3>Passionate about</h3>
+            <p>Java development, problem-solving, 
+                system architecture, and continuous learning.
+            </p>
+        </div>
     </div>
 
     <script src="/js/appbar.js"></script>
