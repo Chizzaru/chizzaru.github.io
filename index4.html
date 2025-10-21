@@ -54,6 +54,17 @@
             background-color: #0095DA;
             color: white;
         }
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #005E8E;
+        }
+        .logo-subtext {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #556975;
+            letter-spacing: 0.5px;
+        }
     </style>
 </head>
 <body class="font-sans bg-gray-50">
@@ -61,11 +72,17 @@
     <header class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm" id="navbar">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                        <i class="fas fa-code text-white text-xl"></i>
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div class="font-bold text-lg leading-tight">INVERO</div>
+                            <div class="text-xs font-medium">IT SOLUTIONS</div>
+                        </div>
                     </div>
-                    <span class="text-xl font-bold text-dark">Invero IT Solutions</span>
+                    <div class="flex flex-col">
+                        <span class="logo-text">INVERO</span>
+                        <span class="logo-subtext">IT SOLUTIONS</span>
+                    </div>
                 </div>
                 
                 <nav class="hidden md:flex space-x-8">
@@ -154,10 +171,10 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-dark mb-4">Our Services</h2>
-                <p class="text-primary max-w-2xl mx-auto">We specialize in custom software development, IT consulting, and security solutions tailored to your business needs.</p>
+                <p class="text-primary max-w-2xl mx-auto">We specialize in custom software development, IT consulting, multimedia services, and security solutions tailored to your business needs.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Software Development -->
                 <div class="service-card bg-light rounded-xl p-6 shadow-md border border-gray-100">
                     <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -251,6 +268,37 @@
                     </a>
                 </div>
                 
+                <!-- Photo & Video Editing -->
+                <div class="service-card bg-light rounded-xl p-6 shadow-md border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-photo-video text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Photo & Video Editing</h3>
+                    <p class="text-primary mb-4">Professional multimedia editing services to enhance your visual content for marketing and branding.</p>
+                    <ul class="text-primary space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Professional Photo Editing
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Video Editing & Production
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Motion Graphics & Animation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Branding & Marketing Materials
+                        </li>
+                    </ul>
+                    <a href="#" class="text-accent font-medium flex items-center">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
                 <!-- System Integration -->
                 <div class="service-card bg-light rounded-xl p-6 shadow-md border border-gray-100">
                     <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -274,6 +322,37 @@
                         <li class="flex items-center">
                             <i class="fas fa-check text-green-500 mr-2"></i>
                             Data Migration Services
+                        </li>
+                    </ul>
+                    <a href="#" class="text-accent font-medium flex items-center">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Additional Service -->
+                <div class="service-card bg-light rounded-xl p-6 shadow-md border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-paint-brush text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Graphic Design</h3>
+                    <p class="text-primary mb-4">Creative design solutions for your business including logos, brochures, and digital assets.</p>
+                    <ul class="text-primary space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Logo & Brand Identity
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Print & Digital Materials
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            UI/UX Design
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Social Media Graphics
                         </li>
                     </ul>
                     <a href="#" class="text-accent font-medium flex items-center">
@@ -568,11 +647,17 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <div class="flex items-center space-x-2 mb-4">
+                    <div class="flex items-center space-x-3 mb-4">
                         <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                            <i class="fas fa-code text-white text-xl"></i>
+                            <div class="text-white text-center">
+                                <div class="font-bold text-sm leading-tight">INVERO</div>
+                                <div class="text-xs font-medium">IT SOLUTIONS</div>
+                            </div>
                         </div>
-                        <span class="text-xl font-bold">Invero IT Solutions</span>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-white">INVERO</span>
+                            <span class="text-gray-400 text-sm">IT SOLUTIONS</span>
+                        </div>
                     </div>
                     <p class="text-gray-400 mb-4">Your trusted partner for custom software development and IT consulting services.</p>
                     <div class="flex space-x-4">
@@ -605,6 +690,7 @@
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Custom Software Development</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">IT Consulting</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">CCTV Camera Installation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Photo & Video Editing</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">System Integration</a></li>
                     </ul>
                 </div>
